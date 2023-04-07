@@ -134,7 +134,7 @@ From the folder /opt/pinot, run the following command:
 ```sh
 bin/pinot-admin.sh LaunchDataIngestionJob -jobSpecFile /opt/pinot/examples/batch/githubEvents/ingestionJobSpec.yaml
 ```
-You can verify that the table is populated by navigating to the Pinot UI at https://localhost:9000 and selecting `Tables` in the left-hand nav. You should see that the table size is greater than 0 MB.
+You can verify that the table is populated by navigating to the Pinot UI at http://localhost:9000 and selecting `Tables` in the left-hand nav. You should see that the table size is greater than 0 MB.
 
 ### 3 - Exploring the UI
 We have already looked at the UI, but in this section we will explore the Pinot UI.
@@ -175,7 +175,7 @@ Since most of the work was done in a Docker container, the tear down is easy. Yo
 - Remove (optionally) the container by running 'docker rm'
 
 ```sh
-docker ps
+docker ps   
 docker stop <name>
 docker rm <name>
 ```
